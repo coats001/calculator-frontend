@@ -1,7 +1,7 @@
-import { Calculator } from './calculator';
+import { Calculation } from './calculation';
 
 describe('Calculator', () => {
   it('should create an instance', () => {
-    expect(new Calculator()).toBeTruthy();
+    expect(new Calculation()).toBeTruthy();
   });
 });
