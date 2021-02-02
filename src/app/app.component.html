@@ -1,12 +1,12 @@
 <h1>Calculator</h1>
 <form #calculator="ngForm" (ngSubmit)="submit(calculator)">
-  <input required name="a" type="number" ngModel>
-  <select name="operator" ngModel>
+  <input required name="a" type="number" [(ngModel)]="calculatorModel.a">
+  <select name="operator" [(ngModel)]="calculatorModel.operator">
     <option name="subtract">-</option>
     <option name="add">+</option>
     <option name="multiply">*</option>
     <option name="divide">/</option>
   </select>
-  <input required name="b" type="number" ngModel>
+  <input required name="b" type="number" [(ngModel)]="calculatorModel.b">
   <button type="submit">Calculate</button>
 </form>
